@@ -1,0 +1,31 @@
+1.	Exclua os últimos 5 itens criados e atualizados nos itens anteriores com as seguintes condições:
+Os dois primeiros pelo _id.
+Titulo = Titulo Uava
+Descrição = Java Best
+Concluída = verdadeiro
+
+Titulo = Titulo OSharp
+Descrição = CShark
+Concluída = falso
+
+Faça o filtro pelo título no item abaixo.
+Titulo = Titulo Pirebase
+Descrição = Fireb4se
+
+Faça o filtro pela descrição, nos itens que seguem:
+Titulo = Titulo YMicrosoft
+Descrição = MicroSOFT
+
+Titulo = Titulo Roracle
+Descrição = Oracle Inc.
+Data de Inclusão = data de hoje
+
+1 -- db.tasks.remove({"_id" : ObjectId("5de69820232e08bcbcc67c48")})
+
+2 -- db.tasks.remove({"_id" : ObjectId("5de698ca232e08bcbcc67c49")})
+
+3 -- db.tasks.remove({"titulo" : "Titulo Pirebase"})
+
+4 -- db.tasks.remove({"descricao" : "MicroSOFT"})
+
+5 -- db.tasks.remove({"descricao" : "Oracle Inc."})
